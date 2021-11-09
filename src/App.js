@@ -55,7 +55,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/thewebkitchen" element={<Home val={data.card} />} />
+        <Route exact path="/thewebkitchen" element={<Home val={data.card} />} />
       </Routes>
     </BrowserRouter>
   );
