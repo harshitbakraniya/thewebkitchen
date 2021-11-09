@@ -54,7 +54,7 @@ function App() {
   }
   return (
     <Routes>
-      <Route path="/thewebkitchen" component={() => (<Home val={data.card} />)} />
+      <Route path="/thewebkitchen" element={() => <Home val={data.card} />} />
     </Routes>
   );
 }
