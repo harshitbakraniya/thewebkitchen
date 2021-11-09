@@ -8,7 +8,7 @@ import Icon4 from "./assets/images/icons8-webpack-96.png";
 import Icon5 from "./assets/images/icons8-team-64.png";
 import Icon6 from "./assets/images/icons8-blood-test-65.png"
 
-import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -53,11 +53,9 @@ function App() {
     ]
   }
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/thewebkitchen" element={<Home val={data.card} />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/thewebkitchen" element={<Home val={data.card} />} />
+    </Routes>
   );
 }
 
