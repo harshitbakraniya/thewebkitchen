@@ -8,6 +8,8 @@ import Icon4 from "./assets/images/icons8-webpack-96.png";
 import Icon5 from "./assets/images/icons8-team-64.png";
 import Icon6 from "./assets/images/icons8-blood-test-65.png"
 
+import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   const data = {
@@ -51,9 +53,9 @@ function App() {
     ]
   }
   return (
-    <div>
-      <Home val={data.card} />
-    </div>
+    <Routes>
+      <Route path="/" component={() => (<Home val={data.card} />)} />
+    </Routes>
   );
 }
 
