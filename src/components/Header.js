@@ -12,11 +12,18 @@ const Header = (props) => {
         if (open) {
             nav.style.right = "-100%";
             nav.style.animation = "none";
-            line1.style.backgroundColor = "#fff"
+
             line1.style.transform = "rotate(0deg)";
             line1.style.transformOrigin = "top left";
             line2.style.display = "block";
-            line3.style.backgroundColor = "#fff"
+            if (window.scrollY <= 900) {
+                line1.style.backgroundColor = "#fff"
+                line3.style.backgroundColor = "#fff"
+            }
+            else {
+                line1.style.backgroundColor = "#000"
+                line3.style.backgroundColor = "#000"
+            }
             line3.style.transform = "rotate(0deg)";
             line3.style.transformOrigin = "top left";
             open = false;

@@ -29,12 +29,33 @@ import Imggeneral from "../assets/images/general_mills.png";
 import Imgkfc from "../assets/images/kfc.png";
 import Imgjsdecaux from "../assets/images/jsdecaux.png"
 import Footer from "./Footer";
+import backSmoke from "../assets/videos/vecteezy.mp4";
+
+// animation
+import Fade from 'react-reveal/Fade';
+import Roll from 'react-reveal/Roll';
+import Flip from 'react-reveal/Flip';
+import Bounce from 'react-reveal/Bounce';
 
 // Import Swiper styles
 
 
 
 const Home = (props) => {
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY >= 900) {
+            document.getElementById("line1").style.backgroundColor = "#000";
+            document.getElementById("line2").style.backgroundColor = "#000";
+            document.getElementById("line3").style.backgroundColor = "#000";
+        }
+        else {
+            document.getElementById("line1").style.backgroundColor = "#fff";
+            document.getElementById("line2").style.backgroundColor = "#fff";
+            document.getElementById("line3").style.backgroundColor = "#fff";
+        }
+    })
+
     const rotate = (id, idofimg) => {
         let main = document.getElementById("main");
         let img = document.getElementById(idofimg);
@@ -56,6 +77,7 @@ const Home = (props) => {
             other4.style.transform = "rotate(-117deg)";
             other5.style.transform = "rotate(-117deg)";
             other6.style.transform = "rotate(-117deg)";
+
             heading.innerHTML = "Agile Software Development"
         } else if (id === "sec") {
             main.style.transform = "rotate(0deg)";
@@ -118,17 +140,24 @@ const Home = (props) => {
             <section id="banner">
                 <div className="main">
                     <Header />
-                    {/* <div className="text">
-                <h1>The Web Kitchen</h1>
-            </div> */}
+                    <div className="text">
+                        <h1>The Web Kitchen</h1>
+                    </div>
                     <div className="home-content container">
-                        <h1 className="simple-content">WE ONLY FOCUS ON DIGITAL</h1>
-                        <h1 className="color-content">BUSINESS EFFICIENCY</h1>
-                        <p>We're a boutique digital agency offering a premium service across branding, website design, web development and digital marketing.</p>
-                        <div className="btn home-btn">LET'S GET STARTED</div>
-                        <img className="effectImg" src={effectImg} alt="none" />
+                        <Fade left>
+                            <h1 className="simple-content">WE ONLY FOCUS ON DIGITAL</h1>
+                            <h1 className="color-content">BUSINESS EFFICIENCY</h1>
+                            <p>We're a boutique digital agency offering a premium service across branding, website design, web development and digital marketing.</p>
+                            <div className="btn home-btn">LET'S GET STARTED</div>
+                        </Fade>
+                        <Roll left>
+                            <img className="effectImg" src={effectImg} alt="none" />
+                        </Roll>
                     </div>
                 </div>
+                {/* <video autoPlay loop >
+                    <source src={backSmoke} />
+                </video> */}
             </section>
             <section id="service">
                 <div className="container ">
@@ -138,7 +167,9 @@ const Home = (props) => {
                             {
                                 props.val.map(data => {
                                     return (
+                                        // <Fade bottom>
                                         <Card val={data} />
+                                        // </Fade>
                                     )
                                 })
                             }
@@ -199,48 +230,68 @@ const Home = (props) => {
                 <div className="container">
                     <Title inTitle="Technologies" />
                     <div className="rowcol">
-                        <div>
-                            <img src={Angular} alt="" />
-                            <h6>Angular</h6>
-                        </div>
-                        <div>
-                            <img src={ReactImg} alt="" />
-                            <h6>React</h6>
-                        </div>
-                        <div>
-                            <img src={JavascriptImg} alt="" />
-                            <h6>Javascript</h6>
-                        </div>
-                        <div>
-                            <img src={HTMLImg} alt="" />
-                            <h6>HTML</h6>
-                        </div>
-                        <div>
-                            <img src={CSSImg} alt="" />
-                            <h6>CSS</h6>
-                        </div>
+                        <Bounce>
+                            <div>
+                                <img src={Angular} alt="" />
+                                <h6>Angular</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={ReactImg} alt="" />
+                                <h6>React</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={JavascriptImg} alt="" />
+                                <h6>Javascript</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={HTMLImg} alt="" />
+                                <h6>HTML</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={CSSImg} alt="" />
+                                <h6>CSS</h6>
+                            </div>
+                        </Bounce>
                     </div>
                     <div className="rowcol">
-                        <div>
-                            <img src={NodeImg} alt="" />
-                            <h6>Node.Js</h6>
-                        </div>
-                        <div>
-                            <img src={SQLImg} alt="" />
-                            <h6>SQL Server</h6>
-                        </div>
-                        <div>
-                            <img src={MySqlImg} alt="" />
-                            <h6>MySql</h6>
-                        </div>
-                        <div>
-                            <img src={MongoImg} alt="" />
-                            <h6>MongoDB</h6>
-                        </div>
-                        <div>
-                            <img src={DotNet} alt="" />
-                            <h6>.NET</h6>
-                        </div>
+                        <Bounce>
+                            <div>
+                                <img src={NodeImg} alt="" />
+                                <h6>Node.Js</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={SQLImg} alt="" />
+                                <h6>SQL Server</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={MySqlImg} alt="" />
+                                <h6>MySql</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={MongoImg} alt="" />
+                                <h6>MongoDB</h6>
+                            </div>
+                        </Bounce>
+                        <Bounce>
+                            <div>
+                                <img src={DotNet} alt="" />
+                                <h6>.NET</h6>
+                            </div>
+                        </Bounce>
                     </div>
                 </div>
             </section>
@@ -289,12 +340,24 @@ const Home = (props) => {
                 <div className="container">
                     <Title inTitle="Our clients" />
                     <div className="row">
-                        <img src={Imgdst} alt="" />
-                        <img src={Imggeneral} alt="" />
-                        <img src={ImgAmazon} alt="" />
-                        <img src={Imgkfc} alt="" />
-                        <img src={Imgfizi} alt="" />
-                        <img src={Imgjsdecaux} alt="" />
+                        <Bounce>
+                            <img src={Imgdst} alt="" />
+                        </Bounce>
+                        <Bounce>
+                            <img src={Imggeneral} alt="" />
+                        </Bounce>
+                        <Bounce>
+                            <img src={ImgAmazon} alt="" />
+                        </Bounce>
+                        <Bounce>
+                            <img src={Imgkfc} alt="" />
+                        </Bounce>
+                        <Bounce>
+                            <img src={Imgfizi} alt="" />
+                        </Bounce>
+                        <Bounce>
+                            <img src={Imgjsdecaux} alt="" />
+                        </Bounce>
                     </div>
                 </div>
             </section>
