@@ -54,7 +54,7 @@ function App() {
   }
   return (
     <Switch>
-      <Route path="/thewebkitchen" exact component={() => { <Home val={data.card} /> }} />
+      <Route path="/thewebkitchen" exact component={() => <Home val={data.card} />} />
     </Switch>
   );
 }
