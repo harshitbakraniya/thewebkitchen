@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/thewebkitchen/static/css/main.f6d14e80.chunk.css",
+    "main.js": "/thewebkitchen/static/js/main.cc5c6cd4.chunk.js",
+    "main.js.map": "/thewebkitchen/static/js/main.cc5c6cd4.chunk.js.map",
+    "runtime-main.js": "/thewebkitchen/static/js/runtime-main.a152b8de.js",
+    "runtime-main.js.map": "/thewebkitchen/static/js/runtime-main.a152b8de.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/thewebkitchen/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.7bd49b70.chunk.js": "/thewebkitchen/static/js/2.7bd49b70.chunk.js",
+    "static/js/2.7bd49b70.chunk.js.map": "/thewebkitchen/static/js/2.7bd49b70.chunk.js.map",
+    "index.html": "/thewebkitchen/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/thewebkitchen/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.f6d14e80.chunk.css.map": "/thewebkitchen/static/css/main.f6d14e80.chunk.css.map",
+    "static/js/2.7bd49b70.chunk.js.LICENSE.txt": "/thewebkitchen/static/js/2.7bd49b70.chunk.js.LICENSE.txt",
+    "static/media/Smoke_Slow_motion_4K.51848106.mp4": "/thewebkitchen/static/media/Smoke_Slow_motion_4K.51848106.mp4",
+    "static/media/Vector 2.79694fba.png": "/thewebkitchen/static/media/Vector 2.79694fba.png",
+    "static/media/Wavy_Bus-19_Single-02.a741e595.jpg": "/thewebkitchen/static/media/Wavy_Bus-19_Single-02.a741e595.jpg",
+    "static/media/amazon.e86af0ff.png": "/thewebkitchen/static/media/amazon.e86af0ff.png",
+    "static/media/angular-icon-logo.2a94d7a4.png": "/thewebkitchen/static/media/angular-icon-logo.2a94d7a4.png",
+    "static/media/css3-logo.d576e4f2.png": "/thewebkitchen/static/media/css3-logo.d576e4f2.png",
+    "static/media/dst_global.50372f12.png": "/thewebkitchen/static/media/dst_global.50372f12.png",
+    "static/media/general_mills.76cc115b.png": "/thewebkitchen/static/media/general_mills.76cc115b.png",
+    "static/media/html-logo.b39a12ac.png": "/thewebkitchen/static/media/html-logo.b39a12ac.png",
+    "static/media/javascript-logo.31c81075.png": "/thewebkitchen/static/media/javascript-logo.31c81075.png",
+    "static/media/jsdecaux.fdef6605.png": "/thewebkitchen/static/media/jsdecaux.fdef6605.png",
+    "static/media/kfc.40945d96.png": "/thewebkitchen/static/media/kfc.40945d96.png",
+    "static/media/microsoft-sql-server.4c652bec.png": "/thewebkitchen/static/media/microsoft-sql-server.4c652bec.png",
+    "static/media/mysql-logo-1.aaf47b1b.png": "/thewebkitchen/static/media/mysql-logo-1.aaf47b1b.png",
+    "static/media/net-removebg-preview.ad738cb8.png": "/thewebkitchen/static/media/net-removebg-preview.ad738cb8.png",
+    "static/media/nodejs-icon-logo.0b1d5449.png": "/thewebkitchen/static/media/nodejs-icon-logo.0b1d5449.png",
+    "static/media/photo-3.3a2529e4.jpg": "/thewebkitchen/static/media/photo-3.3a2529e4.jpg",
+    "static/media/react-logo.6ef75314.png": "/thewebkitchen/static/media/react-logo.6ef75314.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a152b8de.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.7bd49b70.chunk.js",
+    "static/css/main.f6d14e80.chunk.css",
+    "static/js/main.cc5c6cd4.chunk.js"
+  ]
+}
