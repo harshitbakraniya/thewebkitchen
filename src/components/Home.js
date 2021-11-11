@@ -29,7 +29,7 @@ import Imggeneral from "../assets/images/general_mills.png";
 import Imgkfc from "../assets/images/kfc.png";
 import Imgjsdecaux from "../assets/images/jsdecaux.png"
 import Footer from "./Footer";
-import backSmoke from "../assets/videos/vecteezy.mp4";
+import backSmoke from "../assets/videos/Smoke_Slow_motion_4K.mp4";
 
 // animation
 import Fade from 'react-reveal/Fade';
@@ -158,9 +158,9 @@ const Home = (props) => {
                         </Roll>
                     </div>
                 </div>
-                {/* <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0 }}>
+                <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0, opacity: 0.2, height: "100vh", zIndex: 0 }}>
                     <source src={backSmoke} type="video/mp4" />
-                </video> */}
+                </video>
             </section>
 
             {/* services section */}
@@ -223,14 +223,18 @@ const Home = (props) => {
                     <Title inTitle="What we do?" />
                     <div className="row">
                         <div className="col-12 col-md-6 left">
-                            <img src={Vector} alt="vector" />
+                            <Fade left>
+                                <img src={Vector} alt="vector" />
+                            </Fade>
                         </div>
                         <div className="col-12 col-md-6 right">
-                            <div className="content">
-                                <h4 id="heading">Our customers rely on our deep domain experties, so they can focus on their core mission</h4>
-                                <p id="sub-head">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                <button className="btn about-btn">ABOUT US</button>
-                            </div>
+                            <Fade right>
+                                <div className="content">
+                                    <h4 id="heading">Our customers rely on our deep domain experties, so they can focus on their core mission</h4>
+                                    <p id="sub-head">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    <button className="btn about-btn">ABOUT US</button>
+                                </div>
+                            </Fade>
                         </div>
                     </div>
                 </div>
