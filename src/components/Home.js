@@ -158,7 +158,7 @@ const Home = (props) => {
                         </Roll>
                     </div>
                 </div>
-                <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0, opacity: 0.2, height: "100vh", zIndex: 0 }}>
+                <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0, opacity: 0.2, height: "100vh", width: "100%", zIndex: 0 }}>
                     <source src={backSmoke} type="video/mp4" />
                 </video>
             </section>
