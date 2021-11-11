@@ -137,9 +137,12 @@ const Home = (props) => {
     }
     return (
         <>
+            {/* banner section */}
             <section id="banner">
                 <div className="main">
+                    {/* header section */}
                     <Header />
+
                     <div className="text">
                         <h1>The Web Kitchen</h1>
                     </div>
@@ -155,10 +158,12 @@ const Home = (props) => {
                         </Roll>
                     </div>
                 </div>
-                {/* <video autoPlay loop >
-                    <source src={backSmoke} />
+                {/* <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0 }}>
+                    <source src={backSmoke} type="video/mp4" />
                 </video> */}
             </section>
+
+            {/* services section */}
             <section id="service">
                 <div className="container ">
                     <Title inTitle="Custom Software Development Company Serving Start-usp" />
@@ -182,6 +187,8 @@ const Home = (props) => {
                     </div> */}
                 </div>
             </section>
+
+            {/* delivers section */}
             <section id="delivers">
                 <div className="container">
                     <Title inTitle="Software Development company that Delivers" />
@@ -209,6 +216,8 @@ const Home = (props) => {
                     </div >
                 </div >
             </section >
+
+            {/* what we do section */}
             <section id="we-do">
                 <div className="container">
                     <Title inTitle="What we do?" />
@@ -226,6 +235,8 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
+
+            {/* Technologies section */}
             <section id="technology">
                 <div className="container">
                     <Title inTitle="Technologies" />
@@ -295,6 +306,8 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
+
+            {/* custommers review section */}
             <section id="review">
                 <div className="container">
                     <Title inTitle="Customer Success Stories" />
@@ -336,6 +349,8 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
+
+            {/* Our clients section */}
             <section id="clients">
                 <div className="container">
                     <Title inTitle="Our clients" />
@@ -361,6 +376,8 @@ const Home = (props) => {
                     </div>
                 </div>
             </section>
+
+            {/* footer section*/}
             <section id="footer">
                 <Footer />
             </section>
