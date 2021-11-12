@@ -146,9 +146,9 @@ const Home = (props) => {
                     {/* header section */}
                     <Header />
 
-                    <div className="text">
+                    {/* <div className="text">
                         <h1>The Web Kitchen</h1>
-                    </div>
+                    </div> */}
                     <div className="home-content container">
                         <Fade left>
                             <h1 className="simple-content">WE ONLY FOCUS ON DIGITAL</h1>
