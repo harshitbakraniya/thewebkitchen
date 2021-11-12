@@ -21,7 +21,7 @@ body{
 .main{
   width: 100%;
   height: 100vh;
-  background-color: var(--primary_color);
+  background-image: radial-gradient(#456C79,#073B4C);
   /* background-image: url(./assets/images/wallpaperflare.jpg); */
 }
 .overlayer{
@@ -211,8 +211,8 @@ section{
   width: 100%;
   display: grid;
   place-items: center;
-  /* background-color:var(--gray_color); */
-}
+  background-color:var(--gray_color);
+} 
 #service .row{
   text-align: center;
 }
@@ -267,6 +267,7 @@ section{
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
   transition: .4s;
   border-radius: 1rem;
+  cursor: pointer;
 }
 #service .row  .card:hover img{
   /* box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
@@ -313,6 +314,7 @@ section{
   transition: .5s;
   position: absolute;
   box-shadow: inset 0 0 0px 10px var(--primary_color);
+  cursor: pointer;
 }
 
 #delivers .container .row .left .inner{
