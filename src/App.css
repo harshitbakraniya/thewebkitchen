@@ -21,7 +21,7 @@ body{
 .main{
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(#456C79,#073B4C);
+  background-image: radial-gradient(#265463,#073B4C);
   /* background-image: url(./assets/images/wallpaperflare.jpg); */
 }
 .overlayer{
