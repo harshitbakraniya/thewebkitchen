@@ -45,6 +45,7 @@ import Bounce from 'react-reveal/Bounce';
 const Home = (props) => {
 
     window.addEventListener("scroll", () => {
+
         if (window.scrollY >= 900) {
             document.getElementById("line1").style.backgroundColor = "#000";
             document.getElementById("line2").style.backgroundColor = "#000";
@@ -55,6 +56,7 @@ const Home = (props) => {
             document.getElementById("line2").style.backgroundColor = "#fff";
             document.getElementById("line3").style.backgroundColor = "#fff";
         }
+
     })
 
     const rotate = (id, idofimg) => {
