@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/thewebkitchen/static/css/main.f6d14e80.chunk.css",
-    "main.js": "/thewebkitchen/static/js/main.6bae63b5.chunk.js",
-    "main.js.map": "/thewebkitchen/static/js/main.6bae63b5.chunk.js.map",
+    "main.css": "/thewebkitchen/static/css/main.e75a4e33.chunk.css",
+    "main.js": "/thewebkitchen/static/js/main.9ccf09ef.chunk.js",
+    "main.js.map": "/thewebkitchen/static/js/main.9ccf09ef.chunk.js.map",
     "runtime-main.js": "/thewebkitchen/static/js/runtime-main.a152b8de.js",
     "runtime-main.js.map": "/thewebkitchen/static/js/runtime-main.a152b8de.js.map",
     "static/css/2.0a9ec390.chunk.css": "/thewebkitchen/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.7bd49b70.chunk.js": "/thewebkitchen/static/js/2.7bd49b70.chunk.js",
-    "static/js/2.7bd49b70.chunk.js.map": "/thewebkitchen/static/js/2.7bd49b70.chunk.js.map",
+    "static/js/2.104bc530.chunk.js": "/thewebkitchen/static/js/2.104bc530.chunk.js",
+    "static/js/2.104bc530.chunk.js.map": "/thewebkitchen/static/js/2.104bc530.chunk.js.map",
     "index.html": "/thewebkitchen/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/thewebkitchen/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.f6d14e80.chunk.css.map": "/thewebkitchen/static/css/main.f6d14e80.chunk.css.map",
-    "static/js/2.7bd49b70.chunk.js.LICENSE.txt": "/thewebkitchen/static/js/2.7bd49b70.chunk.js.LICENSE.txt",
+    "static/css/main.e75a4e33.chunk.css.map": "/thewebkitchen/static/css/main.e75a4e33.chunk.css.map",
+    "static/js/2.104bc530.chunk.js.LICENSE.txt": "/thewebkitchen/static/js/2.104bc530.chunk.js.LICENSE.txt",
     "static/media/Smoke_Slow_motion_4K.51848106.mp4": "/thewebkitchen/static/media/Smoke_Slow_motion_4K.51848106.mp4",
     "static/media/Vector 2.79694fba.png": "/thewebkitchen/static/media/Vector 2.79694fba.png",
     "static/media/Wavy_Bus-19_Single-02.a741e595.jpg": "/thewebkitchen/static/media/Wavy_Bus-19_Single-02.a741e595.jpg",
@@ -29,13 +29,14 @@
     "static/media/net-removebg-preview.ad738cb8.png": "/thewebkitchen/static/media/net-removebg-preview.ad738cb8.png",
     "static/media/nodejs-icon-logo.0b1d5449.png": "/thewebkitchen/static/media/nodejs-icon-logo.0b1d5449.png",
     "static/media/photo-3.3a2529e4.jpg": "/thewebkitchen/static/media/photo-3.3a2529e4.jpg",
-    "static/media/react-logo.6ef75314.png": "/thewebkitchen/static/media/react-logo.6ef75314.png"
+    "static/media/react-logo.6ef75314.png": "/thewebkitchen/static/media/react-logo.6ef75314.png",
+    "static/media/App.css": "/thewebkitchen/static/media/wallpaperflare.14f8003c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a152b8de.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.7bd49b70.chunk.js",
-    "static/css/main.f6d14e80.chunk.css",
-    "static/js/main.6bae63b5.chunk.js"
+    "static/js/2.104bc530.chunk.js",
+    "static/css/main.e75a4e33.chunk.css",
+    "static/js/main.9ccf09ef.chunk.js"
   ]
 }
