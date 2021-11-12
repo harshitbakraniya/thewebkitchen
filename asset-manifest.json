@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/thewebkitchen/static/css/main.637f64c2.chunk.css",
+    "main.css": "/thewebkitchen/static/css/main.29a97429.chunk.css",
     "main.js": "/thewebkitchen/static/js/main.07ddc750.chunk.js",
     "main.js.map": "/thewebkitchen/static/js/main.07ddc750.chunk.js.map",
     "runtime-main.js": "/thewebkitchen/static/js/runtime-main.a152b8de.js",
@@ -10,7 +10,7 @@
     "static/js/2.104bc530.chunk.js.map": "/thewebkitchen/static/js/2.104bc530.chunk.js.map",
     "index.html": "/thewebkitchen/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/thewebkitchen/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.637f64c2.chunk.css.map": "/thewebkitchen/static/css/main.637f64c2.chunk.css.map",
+    "static/css/main.29a97429.chunk.css.map": "/thewebkitchen/static/css/main.29a97429.chunk.css.map",
     "static/js/2.104bc530.chunk.js.LICENSE.txt": "/thewebkitchen/static/js/2.104bc530.chunk.js.LICENSE.txt",
     "static/media/Smoke_Slow_motion_4K.51848106.mp4": "/thewebkitchen/static/media/Smoke_Slow_motion_4K.51848106.mp4",
     "static/media/Vector 2.79694fba.png": "/thewebkitchen/static/media/Vector 2.79694fba.png",
@@ -35,7 +35,7 @@
     "static/js/runtime-main.a152b8de.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.104bc530.chunk.js",
-    "static/css/main.637f64c2.chunk.css",
+    "static/css/main.29a97429.chunk.css",
     "static/js/main.07ddc750.chunk.js"
   ]
 }
