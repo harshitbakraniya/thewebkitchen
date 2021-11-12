@@ -1,9 +1,10 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Card = (props) => {
     return (
-        // <Fade top>
+        // <Zoom>
         <div class="card " key={props.val.id}>
             <div class="card-body">
                 <img src={props.val.icon} alt="" />
@@ -11,7 +12,7 @@ const Card = (props) => {
                 <p class="card-text">{props.val.subtitle}</p>
             </div>
         </div >
-        // </Fade>
+        // </Zoom>
     );
 }
 

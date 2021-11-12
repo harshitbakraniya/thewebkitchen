@@ -1,7 +1,8 @@
 :root{
   --primary_color:#073B4C;
-  --secondary_color:#06D6A0;
+  --secondary_color: #06D6A0 ;
   --white:#ffffff;
+  --gray_color:#f8f8f8;
 }
 html{
   scroll-behavior: smooth;
@@ -20,12 +21,22 @@ body{
 .main{
   width: 100%;
   height: 100vh;
-  background-color: var(--primary_color);
+  /* background-color: var(--primary_color); */
+  background-image: url(./assets/images/wallpaperflare.jpg);
+}
+.overlayer{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85);
+  position: absolute;
+  top:0;
+  z-index: 0;
 }
 .main .text{
   width: 300%;
   position: absolute;
   bottom: 0;
+  z-index: 1;
 }
 .main .text h1{
   font-size: 24rem;
@@ -44,9 +55,9 @@ body{
     10%{
       margin-left: 0;
     }
-    50%{
+    /* 50%{
       margin-left: -13%;
-    }
+    } */
     100%{
       margin-left: -23%;
     }
@@ -138,23 +149,26 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-start;  
 }
 .main .home-content .simple-content{
   color: var(--white);
   font-size: 4rem;
   font-weight: bold;
   line-height: 2rem;
+  z-index: 1;
 }
 .main .home-content .color-content{
   color: var(--secondary_color);
   font-size: 4rem;
   font-weight: bold;
+  z-index: 1;
 }
 .main .home-content p{
   color: var(--white);
   font-size: 1.1rem;
   width: 40rem;
+  z-index: 1;
 }
 .main .home-content .home-btn{
   border: 2px solid var(--secondary_color);
@@ -175,6 +189,7 @@ body{
   top:0;
   right: 0;
   animation: imageRotate 5s ease-in infinite;
+  z-index: 1;
 }
 @keyframes imageRotate {
   0%{
@@ -195,7 +210,7 @@ section{
   width: 100%;
   display: grid;
   place-items: center;
-  background-color: #f6f6f6;
+  /* background-color:var(--gray_color); */
 }
 #service .row{
   text-align: center;
@@ -248,16 +263,22 @@ section{
   height: 17rem;
   margin: 2%;
   border:none;
-  /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.05); */
-  transition: .3s;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  transition: .4s;
   border-radius: 1rem;
 }
-#service .row  .card:hover{
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
+#service .row  .card:hover img{
+  /* box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
   cursor: pointer;
-  border-bottom: 0.8rem solid var(--primary_color);
+  border-bottom: 0.8rem solid var(--primary_color); */
+  /* visibility: hidden; */
   
   /* color: var(--white); */
+}
+#service .row  .card:hover{
+  border-bottom: 17rem solid var(--primary_color);
+  color: var(--white);
+  padding-top: -10%;
 }
 #service .row  .card img{
   width: 5rem;
@@ -277,22 +298,41 @@ section{
   margin: 6rem 0;
 }
 #delivers .container .row .left{
+  /* width: 100%; */
   display: grid;
   place-items: center;
+  position: relative;
+  margin-top: 1rem;
 }
 #delivers .container .row .left .main-round{
-  width: 28rem;
-  height: 28rem;
-  /* border:0.2px solid #f1f1f1; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
+  width: 28.3rem;
+  height: 28.3rem;
+  /* margin-top: 1rem; */
   border-radius: 50%;
   transition: .5s;
-  box-shadow: inset 0 0 5px 120px var(--primary_color);
+  position: absolute;
+  box-shadow: inset 0 0 0px 10px var(--primary_color);
 }
 
-
+#delivers .container .row .left .inner{
+  width: 20.3rem;
+  height: 20.3rem;
+  position: absolute;  
+  border-radius: 50%;
+  /* margin-top: 0.5rem;   */
+  background-color: var(--primary_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  flex-direction: column;  
+  box-shadow: 0 0 20px 0 var(--primary_color);
+}
+#delivers .container .row .left .inner h1{
+  font-size: 2rem;
+  color: var(--secondary_color);
+  font-weight: 800;
+}
 #delivers .container .row .left .main-round .first,.sec,.third,.four,.five,.six{
   width: 6rem;
   height: 6rem;  
@@ -301,6 +341,7 @@ section{
   position: absolute;
   display: grid;
   place-items: center;
+  /* border:5px solid var(--secondary_color); */
 }
 #delivers .container .row .left .main-round img{
   height: 4rem;
@@ -309,7 +350,7 @@ section{
 }
 #delivers .container .row .left .main-round .first{
   margin-left: 4rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   /* background-color: var(--secondary_color); */
 }
 #delivers .container .row .left .main-round .sec{
@@ -319,7 +360,7 @@ section{
 }
 #delivers .container .row .left .main-round .third{
   margin-left: 18rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   /* background-color: violet; */
 }
 #delivers .container .row .left .main-round .four{
@@ -366,7 +407,7 @@ section{
 
 
 #we-do{
-  background-color: #f6f6f6;
+  background-color: var(--gray_color);
 }
 #we-do .container .row{
   margin: 4rem 0;
@@ -415,7 +456,7 @@ section{
 }
 
 #review{
-  background-color: #f6f6f6;
+  background-color: var(--gray_color);
 }
 #review .container .row{
   display: flex;

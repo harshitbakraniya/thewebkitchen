@@ -34,6 +34,7 @@ import backSmoke from "../assets/videos/Smoke_Slow_motion_4K.mp4";
 // animation
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
+import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
 
@@ -158,6 +159,7 @@ const Home = (props) => {
                         </Roll>
                     </div>
                 </div>
+                <div className="overlayer"></div>
                 {/* <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0, opacity: 0.2, height: "100vh", width: "120rem", zIndex: 0 }}>
                     <source src={backSmoke} type="video/mp4" />
                 </video> */}
@@ -168,17 +170,19 @@ const Home = (props) => {
                 <div className="container ">
                     <Title inTitle="Custom Software Development Company Serving Start-usp" />
                     <div className="all-cards">
-                        <div className="row">
-                            {
-                                props.val.map(data => {
-                                    return (
-                                        // <Fade bottom>
-                                        <Card val={data} />
-                                        // </Fade>
-                                    )
-                                })
-                            }
-                        </div>
+                        <Bounce bottom>
+                            <div className="row">
+                                {
+                                    props.val.map(data => {
+                                        return (
+                                            // <Zoom clear>
+                                            <Card val={data} />
+                                            // </Zoom>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </Bounce>
                     </div>
                     {/* <div className="row">
                         <Card />
@@ -193,25 +197,36 @@ const Home = (props) => {
                 <div className="container">
                     <Title inTitle="Software Development company that Delivers" />
                     <div className="row">
-                        <div className="col-12 col-md-4 col-lg-4 left">
-                            <div className="main-round" id="main">
-                                <div className="first" id="first" onClick={() => rotate("first", "firstImg")} ><img src={Icon1} alt="" id="firstImg" /></div>
-                                <div className="sec" id="sec" onClick={() => rotate("six", "sixImg")} > <img src={Icon2} alt="" id="sixImg" /></div>
-                                <div className="third" id="third" onClick={() => rotate("sec", "secImg")} > <img src={Icon3} alt="" id="secImg" /></div>
-                                <div className="four" id="four" onClick={() => rotate("third", "thirdImg")} > <img src={Icon4} alt="" id="thirdImg" /></div>
-                                <div className="five" id="five" onClick={() => rotate("five", "fiveImg")} > <img src={Icon5} alt="" id="fiveImg" /></div>
-                                <div className="six" id="six" onClick={() => rotate("four", "fourImg")} > <img src={Icon6} alt="" id="fourImg" /></div>
-                            </div>
-                        </div >
+                        <Fade left>
+                            <div className="col-12 col-md-4 col-lg-4 left">
+                                <div className="main-round" id="main">
+                                    <div className="first" id="first" onClick={() => rotate("first", "firstImg")} ><img src={Icon1} alt="" id="firstImg" /></div>
+                                    <div className="sec" id="sec" onClick={() => rotate("six", "sixImg")} > <img src={Icon2} alt="" id="sixImg" /></div>
+                                    <div className="third" id="third" onClick={() => rotate("sec", "secImg")} > <img src={Icon3} alt="" id="secImg" /></div>
+                                    <div className="four" id="four" onClick={() => rotate("third", "thirdImg")} > <img src={Icon4} alt="" id="thirdImg" /></div>
+                                    <div className="five" id="five" onClick={() => rotate("five", "fiveImg")} > <img src={Icon5} alt="" id="fiveImg" /></div>
+                                    <div className="six" id="six" onClick={() => rotate("four", "fourImg")} > <img src={Icon6} alt="" id="fourImg" /></div>
+                                </div>
+                                <div className="inner">
+                                    <h1>SEQUENCE</h1>
+                                    <h1>SELECTION</h1>
+                                    <h1>ITERATION</h1>
+                                </div>
+                            </div >
+                        </Fade>
                         <div className="middle col-12 col-md-4 col-lg-4">
-                            <div className="verticle-line"></div>
-                            <div className="horizontal-line"></div>
+                            <Zoom>
+                                <div className="verticle-line"></div>
+                                <div className="horizontal-line"></div>
+                            </Zoom>
                         </div>
                         <div className="col-12 col-md-4 col-lg-4 right">
-                            <div className="content">
-                                <h4 id="heading">High-level Security</h4>
-                                <p id="sub-head">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </div>
+                            <Fade right>
+                                <div className="content">
+                                    <h4 id="heading">High-level Security</h4>
+                                    <p id="sub-head">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                            </Fade>
                         </div>
                     </div >
                 </div >
