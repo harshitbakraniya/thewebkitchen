@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import effectImg from "../assets/images/Vector 2.png"
 import Card from "./Card";
@@ -9,7 +9,7 @@ import Icon3 from "../assets/images/icons8-technology-lifestyle-96.png";
 import Icon4 from "../assets/images/icons8-request-service-96.png";
 import Icon5 from "../assets/images/icons8-tableau-software-96.png"
 import Icon6 from "../assets/images/icons8-trust-96.png";
-import Vector from "../assets/images/Wavy_Bus-19_Single-02.jpg"
+import Vector from "../assets/images/vec.png"
 import Angular from "../assets/images/angular-icon-logo.png";
 import ReactImg from "../assets/images/react-logo.png";
 import JavascriptImg from "../assets/images/javascript-logo.png";
@@ -43,6 +43,12 @@ import Bounce from 'react-reveal/Bounce';
 
 
 const Home = (props) => {
+    useEffect(() => {
+        let cursor = document.getElementById("cursor");
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 30) + "px;")
+        })
+    })
 
     window.addEventListener("scroll", () => {
 
@@ -140,8 +146,10 @@ const Home = (props) => {
     }
     return (
         <>
+
             {/* banner section */}
             <section id="banner">
+                <div className="cursor" id="cursor"></div>
                 <div className="main">
                     {/* header section */}
                     <Header />

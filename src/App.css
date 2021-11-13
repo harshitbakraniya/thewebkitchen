@@ -12,17 +12,31 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
+#cursor{
+  width: 3.5rem;
+  height: 3.5rem;
+  border:4px solid var(--secondary_color);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 11;
+  transition-duration: 100ms;
+  transition-timing-function: ease;
+  pointer-events: none;  
+}
 
 #banner{
   padding: 0;
+  cursor: none;
+  position: relative;
 }
 .main{
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(#265463,#073B4C);
-  /* background-image: url(./assets/images/wallpaperflare.jpg); */
+  /* background-image: radial-gradient(#265463,#073B4C); */
+  background-image: url(./assets/images/wallpaperflare.jpg);
 }
 .overlayer{
   width: 100%;
@@ -30,7 +44,7 @@ body{
   background-color: rgba(0,0,0,0.85);
   position: absolute;
   top:0;
-  display: none;
+  /* display: none; */
   z-index: 0;
 }
 .main .text{
@@ -114,10 +128,16 @@ body{
   color: var(--secondary_color);
 }
 .main .header .nav-icon{
+  height: 2.8rem;
+  width: 3rem;
   position: fixed;
-  z-index: 100;
+  z-index: 20;
+  right: 3rem;
+  top: 3rem;
   cursor: pointer;
+  /* background-color:var(--white); */
 }
+
 .main .header .nav-icon span{
   width: 3rem;
   height: 0.4rem;
@@ -264,23 +284,20 @@ section{
   height: 17rem;
   margin: 2%;
   border:none;
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.05); */
   transition: .4s;
   border-radius: 1rem;
   cursor: pointer;
+  /* background: none; */
 }
-#service .row  .card:hover img{
-  /* box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
-  cursor: pointer;
-  border-bottom: 0.8rem solid var(--primary_color); */
-  /* visibility: hidden; */
-  
-  /* color: var(--white); */
-}
+
 #service .row  .card:hover{
   border-bottom: 17rem solid var(--primary_color);
   color: var(--white);
   padding-top: -10%;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  background: var(--white);
+  transform: scale(1.1);
 }
 #service .row  .card img{
   width: 5rem;
@@ -415,13 +432,18 @@ section{
 #we-do .container .row{
   margin: 4rem 0;
 }
+#we-do .container .row .left{
+  padding: 2rem;
+}
 #we-do .container .row .left img{
   height: 100%;
   width: 100%;
+  
 }
 #we-do .container .row .right{
   display: grid;
-  place-items: center;
+  place-items: center;  
+  padding: 2rem;
 }
 #we-do .container .row .right h4{
   font-size: 2rem;
