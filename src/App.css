@@ -15,18 +15,6 @@ body{
   cursor: none;
 }
 
-#cursor{
-  width: 3.5rem;
-  height: 3.5rem;
-  border:4px solid var(--secondary_color);
-  position: absolute;
-  border-radius: 50%;
-  z-index: 11;
-  transition-duration: 100ms;
-  transition-timing-function: ease;
-  pointer-events: none;  
-}
-
 #banner{
   padding: 0;
   cursor: none;

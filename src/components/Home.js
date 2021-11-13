@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "./Header";
 import effectImg from "../assets/images/Vector 2.png"
 import Card from "./Card";
@@ -29,13 +29,11 @@ import Imggeneral from "../assets/images/general_mills.png";
 import Imgkfc from "../assets/images/kfc.png";
 import Imgjsdecaux from "../assets/images/jsdecaux.png"
 import Footer from "./Footer";
-import backSmoke from "../assets/videos/Smoke_Slow_motion_4K.mp4";
 
 // animation
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import Zoom from 'react-reveal/Zoom';
-import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
 
 // Import Swiper styles
@@ -43,12 +41,12 @@ import Bounce from 'react-reveal/Bounce';
 
 
 const Home = (props) => {
-    useEffect(() => {
-        let cursor = document.getElementById("cursor");
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 30) + "px;")
-        })
-    })
+    // useEffect(() => {
+    //     let cursor = document.getElementById("cursor");
+    //     document.addEventListener('mousemove', e => {
+    //         cursor.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 30) + "px;")
+    //     })
+    // })
 
     window.addEventListener("scroll", () => {
 
@@ -149,7 +147,7 @@ const Home = (props) => {
 
             {/* banner section */}
             <section id="banner">
-                <div className="cursor" id="cursor"></div>
+
                 <div className="main">
                     {/* header section */}
                     <Header />
