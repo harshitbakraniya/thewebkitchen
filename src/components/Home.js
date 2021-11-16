@@ -48,20 +48,20 @@ const Home = (props) => {
     //     })
     // })
 
-    window.addEventListener("scroll", () => {
+    // window.addEventListener("scroll", () => {
 
-        if (window.scrollY >= 900) {
-            document.getElementById("line1").style.backgroundColor = "#000";
-            document.getElementById("line2").style.backgroundColor = "#000";
-            document.getElementById("line3").style.backgroundColor = "#000";
-        }
-        else {
-            document.getElementById("line1").style.backgroundColor = "#fff";
-            document.getElementById("line2").style.backgroundColor = "#fff";
-            document.getElementById("line3").style.backgroundColor = "#fff";
-        }
+    //     if (window.scrollY >= 900) {
+    //         document.getElementById("line1").style.backgroundColor = "#000";
+    //         document.getElementById("line2").style.backgroundColor = "#000";
+    //         document.getElementById("line3").style.backgroundColor = "#000";
+    //     }
+    //     else {
+    //         document.getElementById("line1").style.backgroundColor = "#fff";
+    //         document.getElementById("line2").style.backgroundColor = "#fff";
+    //         document.getElementById("line3").style.backgroundColor = "#fff";
+    //     }
 
-    })
+    // })
 
     const rotate = (id, idofimg) => {
         let main = document.getElementById("main");
