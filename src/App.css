@@ -166,6 +166,7 @@ body{
   font-weight: bold;
   line-height: 2rem;
   z-index: 1;
+
 }
 .main .home-content .color-content{
   color: var(--secondary_color);

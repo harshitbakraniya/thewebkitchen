@@ -156,12 +156,12 @@ const Home = (props) => {
                         <h1>The Web Kitchen</h1>
                     </div> */}
                     <div className="home-content container">
-                        <Fade left>
+                        <Zoom>
                             <h1 className="simple-content">WE ONLY FOCUS ON DIGITAL</h1>
                             <h1 className="color-content">BUSINESS EFFICIENCY</h1>
                             <p>We're a boutique digital agency offering a premium service across branding, website design, web development and digital marketing.</p>
                             <div className="btn home-btn">LET'S GET STARTED</div>
-                        </Fade>
+                        </Zoom>
                         <Roll left>
                             <img className="effectImg" src={effectImg} alt="none" />
                         </Roll>
