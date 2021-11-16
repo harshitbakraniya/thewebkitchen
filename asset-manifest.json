@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/thewebkitchen/static/css/main.ba1934fa.chunk.css",
-    "main.js": "/thewebkitchen/static/js/main.a36555d1.chunk.js",
-    "main.js.map": "/thewebkitchen/static/js/main.a36555d1.chunk.js.map",
+    "main.css": "/thewebkitchen/static/css/main.97cfb7ce.chunk.css",
+    "main.js": "/thewebkitchen/static/js/main.c8a9ad9c.chunk.js",
+    "main.js.map": "/thewebkitchen/static/js/main.c8a9ad9c.chunk.js.map",
     "runtime-main.js": "/thewebkitchen/static/js/runtime-main.a152b8de.js",
     "runtime-main.js.map": "/thewebkitchen/static/js/runtime-main.a152b8de.js.map",
     "static/css/2.0a9ec390.chunk.css": "/thewebkitchen/static/css/2.0a9ec390.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.1525eb94.chunk.js.map": "/thewebkitchen/static/js/2.1525eb94.chunk.js.map",
     "index.html": "/thewebkitchen/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/thewebkitchen/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.ba1934fa.chunk.css.map": "/thewebkitchen/static/css/main.ba1934fa.chunk.css.map",
+    "static/css/main.97cfb7ce.chunk.css.map": "/thewebkitchen/static/css/main.97cfb7ce.chunk.css.map",
     "static/js/2.1525eb94.chunk.js.LICENSE.txt": "/thewebkitchen/static/js/2.1525eb94.chunk.js.LICENSE.txt",
     "static/media/Vector 2.79694fba.png": "/thewebkitchen/static/media/Vector 2.79694fba.png",
     "static/media/amazon.e86af0ff.png": "/thewebkitchen/static/media/amazon.e86af0ff.png",
@@ -35,7 +35,7 @@
     "static/js/runtime-main.a152b8de.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.1525eb94.chunk.js",
-    "static/css/main.ba1934fa.chunk.css",
-    "static/js/main.a36555d1.chunk.js"
+    "static/css/main.97cfb7ce.chunk.css",
+    "static/js/main.c8a9ad9c.chunk.js"
   ]
 }
