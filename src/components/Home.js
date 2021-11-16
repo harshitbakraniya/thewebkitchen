@@ -29,6 +29,7 @@ import Imggeneral from "../assets/images/general_mills.png";
 import Imgkfc from "../assets/images/kfc.png";
 import Imgjsdecaux from "../assets/images/jsdecaux.png"
 import Footer from "./Footer";
+import Logo from "../assets/images/logo1.png";
 
 // animation
 import Fade from 'react-reveal/Fade';
@@ -149,6 +150,7 @@ const Home = (props) => {
             <section id="banner">
 
                 <div className="main">
+                    <img className="logo" src={Logo} alt="" />
                     {/* header section */}
                     <Header />
 
